@@ -1,53 +1,45 @@
+html,
 body {
-    overflow: hidden;
+  height: 100vh;
+  width: 100vw;
 }
-body {
-    background-color: #121212;
-    color: black;
-    display: flex;
-  }
-  
-  /* Btn */
-  button {
-    all: unset;
-    padding: 1.3rem 3.5rem;
-    margin: 200px auto;
-    position: relative;
-    top: -120px;
-    text-align: center;
-    font: bold 25px roboto;
-    border-radius: 3px;
-    background-color: #ffcc00;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  /* Before & After */
-  button::before,
-  button::after {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 9px;
-    background-color: inherit;
-    transition: all 0.3s ease-in-out;
-    border-radius: 30% 30% / 30% 100%;
-  }
-  
-  /* Before */
-  button::before {
-    top: -13px;
-    left: 0;
-  }
-  
-  /* After */
-  button::after {
-    bottom: -13px;
-    right: 0;
-  }
-  
-  /* Hover */
-  button:hover::before,
-  button:hover::after {
-    width: 100%;
-  }
+
+button img {
+  width: 100%;
+}
+
+#bt1 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 10px;
+  top: 110px;
+}
+
+#bt2 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 10px;
+  top: 160px;
+}
+
+#bt3 {
+  width: 50px;
+  position: absolute;
+  height: 50px;
+  left: 10px;
+  top: 210px;
+}
+
+
+
+#theframe {
+  width: 100%;
+  height: 100%;
+}
+
+.holder {
+  width: 100%;
+  height: 100%;
+  position: relative;
