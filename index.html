@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Video</title>
+    <meta name="description" content="A Day At The Beach">
+    <script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
+  </head>
+  <body>
+   
+    <button onclick="playSound()">Play</button>
+
+    <script>
+      let playSound = () => new Audio("https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3").play()
+    </script>
+<!----
+    <iframe width="1536" height="864" src="https://www.youtube.com/embed/xglOpVV_DZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+--->
+  </body>
+</html>

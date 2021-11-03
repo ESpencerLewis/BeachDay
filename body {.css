@@ -1,0 +1,53 @@
+body {
+    overflow: hidden;
+}
+body {
+    background-color: #121212;
+    color: black;
+    display: flex;
+  }
+  
+  /* Btn */
+  button {
+    all: unset;
+    padding: 1.3rem 3.5rem;
+    margin: 200px auto;
+    position: relative;
+    top: -120px;
+    text-align: center;
+    font: bold 25px roboto;
+    border-radius: 3px;
+    background-color: #ffcc00;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* Before & After */
+  button::before,
+  button::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 9px;
+    background-color: inherit;
+    transition: all 0.3s ease-in-out;
+    border-radius: 30% 30% / 30% 100%;
+  }
+  
+  /* Before */
+  button::before {
+    top: -13px;
+    left: 0;
+  }
+  
+  /* After */
+  button::after {
+    bottom: -13px;
+    right: 0;
+  }
+  
+  /* Hover */
+  button:hover::before,
+  button:hover::after {
+    width: 100%;
+  }
