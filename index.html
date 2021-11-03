@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -9,18 +8,53 @@
         var audio = document.getElementById("audio");
         audio.play();
       }
+      function pause() {
+        var audio = document.getElementById("audio");
+        audio.currentTime = 0;
+      audio.pause();
+      }
     </script>
   </head>
   <body>
-   
-    <button onclick="playSound()">Play</button>
+ <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+  function One() {
+    $("#theframe").attr('src', "https://www.youtube.com/embed/FTQbiNvZqaY");
+  }
 
-    <script>
-      let playSound = () => new Audio("https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3").play()
-    </script>
-<!----
-    <iframe width="1536" height="864" src="https://www.youtube.com/embed/xglOpVV_DZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
---->
+ 
+</script>
+-->
+
+
+
+     <script>
+      let playSound1 = () => new Audio("https://static.wixstatic.com/mp3/a1a4b8_4b0ab063d0174b3097d97273cc97af63.mp3").play()
+      </script>
+      
+       <script>
+      let playSound2 = () => new Audio("https://static.wixstatic.com/mp3/a1a4b8_0af07ccf7e3f480bb68bf31c29150b44.mp3").play()
+      </script>
+      
+        <script>
+      let playSound3 = () => new Audio("https://static.wixstatic.com/mp3/a1a4b8_0cdf0aa9a4af4daab4555c8601bc8778.mp3").play()
+      </script>
+<div class="holder">
+
+  <iframe src="http://www.youtube.com/embed/xglOpVV_DZY?rel=0&amp;autoplay=1&mute=1" id="theframe" frameborder="0" allowfullscreen></iframe>
+
+  <button type="button" id="bt1"  onclick="playSound1()">
+             <img src="https://orig00.deviantart.net/4c1b/f/2009/060/d/f/round_glossy_green_button_by_fbouly.png" />
+        </button>
+  <button type="button" id="bt2" onclick="playSound2()">
+            <img src="https://orig00.deviantart.net/4c1b/f/2009/060/d/f/round_glossy_green_button_by_fbouly.png" />
+        </button>
+  <button type="button" id="bt3" onclick="playSound3()">
+            <img src="https://orig00.deviantart.net/4c1b/f/2009/060/d/f/round_glossy_green_button_by_fbouly.png" />
+        </button>
+
+</div>
+
+
   </body>
 </html>
